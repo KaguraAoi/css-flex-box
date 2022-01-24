@@ -1,0 +1,90 @@
+pengertian flex box
+-------------------
+- model layout 1 dimensi untuk mengatur jarak antar item dalam sebuah container
+- flex box hanya dapat mengatur 1 dimensi, antara baris atau kolom, tidak bisa keduanya sekaligus
+- flex box dapat mensejajarkan jarak antar item walaupun ukurannya dinamis
+
+istilah pada flex box
+---------------------
+- container - pembungkus elemen flex box
+- items - elemen di dalam container
+- main axis - sumbu utama dari sebuah container yang menentukan urutan dari penempatan items secara horizontal
+- main start & main end - mulai dan berakhirnya items yang disimpan di dalam container
+- main size adalah ukuran dari container yang akan membuat dimensi dari items nya relatif terhadap main size
+
+properti pada container
+-----------------------
+
+display
+-------
+- valuenya flex. contoh : display : flex; 
+- membuat sebuah elemen parent menjadi flex box
+- membuat elemen-elemen di dalamnya bisa berperilaku flex juga
+    
+flex-direction
+--------------
+- mengatur arah dari urutan elemen di dalamnya bisa horizontal, vertikal atau kebalikannya
+- valuenya :
+- row (default)
+- row-reverse (kanan ke kiri)
+- column (atas ke bawah)
+- column reverse (bawah ke atas)
+    
+flex-wrap
+---------
+- secara default, semua items dalam container akan berada pada satu baris,
+- meskipun ukurannya sudah tidak cukup. wrap memungkingkan untuk memindahkan items,
+- ke baris di bawahnya
+- valuenya :
+- wrap (turun kebawah)
+- wrap-revers (dimulai dari elemen terakhir)
+- nowrap(default)
+
+justify-content
+---------------
+- mengatur rata dari elemen-elemen di dalamnya
+- valuenya :
+- flex-start (default)
+- flex-end (rata kanan)
+- center (rata tengah)
+- space-between (elemen pertama rata kiri elemen terakhir rata kanan sisanya dibagi rata)
+- space-around (membagi rata sisi kiri dan kanannya)
+- space-evently (rata antar item)
+
+align-items
+-----------
+- mengatur kesejajaran antar item secara vertikal
+- valuenya :
+- flex-start (default)
+- flex-end (rata bawah)
+- center (rata tengah vertikal)
+- stretch (tingginya full ketika tidak dikasih height pada item nya)
+- baseline (atur rata tengah berdasarkan text yang berada di dalamnya)
+
+align-content
+-------------
+- sama seperti align, tapi hanya berlaku ketika itemnya lebih dari 1 baris
+- valuenya :
+- flex-start (default)
+- flex-end
+- center
+- stretch
+- space between (baris pertama rata atas baris terakhir rata bawah)
+- space-around (setiap baris dibagi rata atas dan bawahnya)
+
+properti pada items
+-------------------
+
+order
+-----
+- mengatur urutan antar item nya
+- valuenya berupa angka. contoh : order : 2; (berarti item nya,
+- berada di urutan ke 2
+
+flex-grow/flex
+--------------
+- mengatur ukuran dari item nya tanpa mendefinisikan ukuran dari item nya
+
+align-self
+----------
+- mengatur perilaku penjajaran sebuah item yang spesifik terhadap cross axis
